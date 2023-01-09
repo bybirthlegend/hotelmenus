@@ -1,0 +1,9 @@
+************************************************************************************************************
+07 July 2022
+ALTER TABLE `tblsetup`	ADD COLUMN `strOperationType` VARCHAR(100) NOT NULL DEFAULT '' AFTER `strPricingAreaForOnlineOrders`;
+
+And add below values to this newly added column-  DineIn,HomeDelivery,TakeAway
+************************************************************************************************************
+08 Julu 2022
+INSERT INTO `infosys`.`tblcostcentermaster` (`strCostCenterCode`, `strCostCenterName`, `strPrinterPort`, `strSecondaryPrinterPort`, `strUserCreated`, `strUserEdited`, `dteDateCreated`, `dteDateEdited`, `strClientCode`) VALUES ('C02', 'BAR', '0', '0', 'SANGUINE', 'SANGUINE', '2022-07-08 23:19:55', '2022-07-08 23:19:55', '412.005');
+************************************************************************************************************

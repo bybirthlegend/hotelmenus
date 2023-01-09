@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap');
+html{
+     min-height:100vh;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+}
+h1,h2,h3,h4,h5,h6{
+    color:#383838;
+    font-weight: 600;
+    margin-bottom:0;
+}
+h2{
+    font-size:24px;
+}
+p{
+    color:#7d7d7d;
+}
+a:focus{
+    text-decoration:none;
+    color:#ffffff;
+}
+a:hover{
+    text-decoration:none;
+    color:#ffffff;
+}
+.navigation-bg{
+    background:#2b82e9;
+}
+.navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+.navbar-dark .navbar-toggler-icon {
+     background-image: none;}
+.title-wrapper{
+    text-align:center;
+    padding:25px 0px 15px 0px;
+}
+.category .category-links{
+    display: block;
+    background: #2caee2;
+    padding: 38px 0px;
+    text-align: center;
+    margin:0px 0px 3px 0px;
+}
+.category-links:hover{
+    text-decoration:none;
+}
+.category-links:focus{
+    text-decoration:none;
+}
+.category .category-links h3{
+    font-size:22px;
+    color:#ffffff;
+    font-weight:500;
+}
+.dishname-wrapper {
+    padding:20px 0px 10px 0px;
+}
+.dishname-wrapper h3{
+    font-size:22px;
+    font-weight:400;
+}
+.dishname-wrapper p{
+    font-size:13px;
+    padding-right:20px;
+}
+.cart-btn{
+  display: block;
+    width: 100%;
+    background: #2b82e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+ }
+ .cart-btn:hover{
+     text-decoration:none;
+     color:#ffffff;
+ }
+ .no-of-item{
+     font-size:24px;
+ }
+ .decreament-btn{
+     background: #fe001a;
+    color: #ffffff;
+    padding: 5px 38px;
+    font-size: 25px;
+    margin-right:25px;
+ }
+ .increament-btn{
+     background: #2b82e9;
+    color: #ffffff;
+    padding: 5px 38px;
+    font-size: 25px;
+    margin-left:25px;
+ }
+ .increament-btn .decreament-btn:focus{
+     text-decoration:none;
+     color:#ffffff;
+ }
+  .increament-btn .decreament-btn:hover{
+     text-decoration:none;
+     color:#ffffff;
+ }
+ .order-from-wrapper{
+     padding:20px 0px;
+ }
+ .order-from-wrapper h2{
+     font-size:20px;
+ }
+ .cross-icons{
+  color:#2caee4;
+  margin:0px 0px 0px 10px;
+ }
+ .apply-coupon-btn{
+     background: #2b82e9;
+      width: 100%;
+    display: block;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.amount-wrapper{
+  margin:15px 0px;  
+}
+ .amount-wrapper .table td{
+     padding: 0.1rem;
+     border-top:0;
+ }
+ .small-text{
+     font-size: 12px;
+     color: #2b82e9;
+ }
+ .logo-wrapper{
+     padding:40px 0px;
+ }
+ .welcome-text{
+     font-size:12px;
+     margin-top:10px;
+}
+.main-btn{
+    width: 280px;
+    display: block;
+    margin: 5px auto;
+}
+.footer-text{
+    font-size:10px;
+    text-align:center;
+    padding:20px 0px 0px 0px;
+}
+.navigationdark-bg{
+    background:#06253b;
+}
+.current-location-wrapper{
+    padding:30px 0px 0px 0px;
+}
+.current-location-wrapper h3{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+} 
+.current-location-wrapper p{
+    margin-top:10px;
+    font-size: 13px;
+    color: #c8c5c5;
+}
+.logo-wrapper{
+    padding: 35px 0px;
+    text-align: center;
+    border-radius:3px;
+    margin-bottom:10px;
+}
+.logo-wrapper-border{
+    border: 1px solid #7d7a7a;
+}
+  .input-group-append {
+    margin-left: -1px;
+    background: #ffffff;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+#payment .modal-content {
+    border:1px solid #ffffff;
+    border-radius:0px;
+}
+    
+#payment .modal-header{
+    background:#000000;
+    display:block;
+    border-radius:0px;
+    border:none;
+}
+#payment .modal-header h3{
+    color: #ffffff;
+    font-size: 22px;
+}
+#payment .modal-header p{
+    color: #a99055;
+    margin: 10px 0px;
+}
+#payment .modal-header .close{
+    margin-top: -50px;
+    color:#ffffff;
+}
+#payment .modal-body{
+    padding:0;
+}
+.language-dropdown-wrapper{
+    background: #1c1c1c;
+    padding: 7px 15px;
+}
+.language-dropdown-wrapper select{
+    background: none;
+    border:none;
+    color:#ffffff;
+    font-size:14px;
+}
+.language-dropdown-wrapper select option{
+    color:#000000;
+}
+.weight-600{
+    font-weight:600;
+}
+.location-nav{
+    background: #2a81e8;
+    padding: 5px 0px 20px 0px;
+}
+.menu-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    color: #2b82e9;
+}
+.menu-tabs .nav-link{
+    padding: 10px 8px 10px 0px;
+    font-size: 13px;
+    color: #7d7d7d;
+    
+}
+.menu-tabs .tab-content h3{
+    font-size:17px;
+}
+.menu-tabs .tab-content a{
+    color:#7d7d7d;
+    font-size:13px;
+    float:right;
+}
+.menu-tabs .tab-content .dish-name{
+     font-weight: 400;
+    font-size: 25px;
+    color: #3c3c3c;
+}
+.grid-wrapper{
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    margin:20px 0px;
+}
+.grid-container{
+padding: 8px 0px 0px 20px;}
+.menu-tabs .tab-content .dish-description{
+
+    margin: 5px 1px;
+}
+.menu-tabs .tab-content .dish-rates{
+    padding:10px 0px 0px 0px;
+    color:#fe2335;
+}
+#enquiryForm .modal-dialog {
+   position:fixed;
+   top:auto;
+   right:0px;
+   left:0px;
+   bottom:0;
+}  
+#enquiryForm .modal-title{
+    font-size:20px;
+}
+#enquiryForm .modal-header {
+    display: block;
+}
+#enquiryForm .modal-header {
+    border-bottom:0;
+    padding-bottom:0;
+}
+#enquiryForm .form-control {
+    padding: 25px 0.75rem;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+}
+#enquiryForm .modal-body{
+    padding-top:0;
+}
+#enquiryForm .modal-header{
+    font-size:12px;
+}
+#enquiryForm .modal-body p{
+    font-size:12px;
+    margin:10px 0px 30px 0px;
+}
+#enquiryForm .modal-dialog {
+    margin: -1px;
+}
+#enquiryForm .input-group-text {
+    background: #f6f6f6;
+}
+#enquiryForm .form-control::placeholder {
+    color: #3f3e43;
+    font-size:14px;
+    
+}
+#enquiryForm .input-group.has-validation>.input-group-append:nth-last-child(n+3)>.btn, .input-group.has-validation>.input-group-append:nth-last-child(n+3)>.input-group-text, .input-group:not(.has-validation)>.input-group-append:not(:last-child)>.btn, .input-group:not(.has-validation)>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#enquiryForm .input-group-prepend {
+    margin-right: -10px;
+}
+.scanqr-wrapper{
+     padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+.scanqr-wrapper .qr-body{
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.scanqr-wrapper .qr-body .main-color{
+    color:#2aade2;
+}
+.scanqr-wrapper .qr-body p{
+   margin-bottom:5px;
+}
+.scanqr-wrapper .qr-footer {
+   margin:20px 0px;
+}

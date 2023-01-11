@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>welcome</title>
 
  <style>
@@ -139,19 +140,30 @@
         <div id="logo" class="media" data-src="logo.png" src="./logo.png"></div>
 
     </header>
-    <p>Bill Number : ${billNo}</p>
+      <p>NAME:</p>
+    <p>MOBILE NO :</p>
+      <p>GST NO:</p>
+    <p>TEL NO:</p>
+      <p>EMAIL ID:</p>
+    <p>TABLE NAME : </p>
+    
+    
+      <p>pos:${strPOSCode}</p>
+    <p>Bill NO : ${billNo}</p>
     <table class="bill-details">
         <tbody>
             <tr>
-                <td>Date : <span>1</span></td>
-                <td>Time : <span>2</span></td>
+            <td>Pax : <span>${intPaxNo}</span></td>
+            <tr>
+                <td>Date&Time : <span>${dteBillDate}</span></td>
+             
             </tr>
             <tr>
-                <td>Table #: <span>3</span></td>
-                <td>Bill # : <span>4</span></td>
+               
+                
             </tr>
             <tr>
-                <th class="center-align" colspan="2"><span class="receipt">Original Receipt</span></th>
+                <th class="center-align" colspan="${strClientCode}"><span class="receipt"> ClientCode:${strClientCode}</span></th>
             </tr>
         </tbody>
     </table>
@@ -159,7 +171,7 @@
     <table class="items">
         <thead>
             <tr>
-                <th class="heading name">Item</th>
+                <th class="heading name">Item Name</th>
                 <th class="heading qty">Qty</th>
                 <th class="heading rate">Rate</th>
                 <th class="heading amount">Amount</th>
@@ -192,22 +204,29 @@
                 <td class="price">500.00</td>
             </tr>
             <tr>
-                <td colspan="3" class="sum-up line">Subtotal</td>
-                <td class="line price">12112.00</td>
+                <td colspan="3" class="sum-up line"> ${Subtotal} </td>
+                <td class="line price">$ {dblSubTotal}</td>
             </tr>
-            <tr>
+            
+              <td colspan="3" class="sum-up line"> ${dblDiscountAmt} </td>
+                <td class="line price">$ {dblDiscountAmtl}</td>
+             <tr>   
+                <td colspan="3" class="sum-up line"> ${strRemarks} </td>
+                <td class="line price">$ {strRemarks}</td>
+            
+             <tr>
                 <td colspan="3" class="sum-up">CGST</td>
                 <td class="price">10.00</td>
             </tr>
-            <tr>
+          
                 <td colspan="3" class="sum-up">SGST</td>
                 <td class="price">10.00</td>
             </tr>
             <tr>
-                <th colspan="3" class="total text">Total</th>
-                <th class="total price">12132.00</th>
+                <th colspan="3" class="total text"> ${Total} </th>
+                <th class="total price">GRANT TOTAL ${dblGrandTotal}</th>
             </tr>
-        </tbody>
+          </tbody>
     </table>
     <section>
         <p>
@@ -224,7 +243,7 @@
 
 
 
-${clientCode}
+
 </br>
 
 </body>

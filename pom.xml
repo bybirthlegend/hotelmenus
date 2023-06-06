@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sanguine.menus</groupId>
-	<artifactId>SanguineB</artifactId>
+	<artifactId>SanguineBills</artifactId>
 	<name>SpringMVCHibernate</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
@@ -257,15 +257,6 @@
 			<version>8.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		
-		<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.24</version>
-</dependency>
-		
-		
 	</dependencies>
 	<build>
 	

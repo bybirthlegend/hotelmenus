@@ -19,11 +19,12 @@
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
 		pre { background: transparent }
+		.card {font-family: "Roboto", sans-serif;}
 		pre.western { font-family: "Roboto", sans-serif; font-size: 14px }
 		pre.cjk { font-family: "Roboto", sans-serif; font-size: 14px }
 		pre.ctl { font-family: "Roboto", sans-serif; font-size: 14px }
 		h2 {text-align:center;font-size: 14px;}
-		h3 {text-align:center;font-size: 17.5px;}
+		h1 {text-align:center;font-size: 20px;}
 		p {font-size: 14px;}
 	    .center {text-align:center;color:gray;}
 </style>
@@ -33,11 +34,12 @@
 <body lang="en-US" link="#000080" vlink="#800000" dir="ltr">     
 
 <div class="card" style="width:100%">
-    <img class="card-img-top" src="/images/prems.jpg" alt="Prems Logo" style="width:100%;text-align:center;">
+    <img class="card-img-top" src="../${pageContext.request.contextPath}/resources/images/prems.jpg"  class="img-fluid" alt="Prems Logo" style="height:145px;width:250px;margin-left:auto;margin-right:auto;">
+<hr style="margin:0;">
     <div class="card-body">
-      <h2 class="card-title">[DUPLICATE]</h2>
+     <!--  <h2 class="card-title">[DUPLICATE]</h2> -->
        <h2 class="card-title">TAX INVOICE</h2>
-       <h3 class="card-title">${strClientName}</h3>
+       <h1 class="card-title">${strClientName}</h1>
        <p class="card-text center">${strAddressLine1}  ${strAddressLine2}</p>
         <p class="card-text center">${strAddressLine3}</p>
         <p class="card-text center">${strCityName}</p>
@@ -52,37 +54,78 @@
          <p class="card-text"> Pax No.     : ${intPaxNo} </p>
          <p class="card-text"> Date & Amp; Time : ${dteBillDate} </p>
          <hr>
-         
- <pre class="western">
-  Item Name            Qty           Rate           Amt
-<hr>
-<c:forEach items="${countryList}" var="item">
-  ${item.STRITEMNAME}
-  ${item.DBLQUANTITY}${item.DBLRATE}${item.DBLAMOUNT}</c:forEach>
+     
+ <div class="col-md-12">
+    <div class="row">
+       <div class="col-6"><b>Item Name</b></div>
+       <div class="col-2"><b>Qty</b></div>
+       <div class="col-2"><b>Rate</b></div>
+       <div class="col-2"><b>Amt</b></div>
+    </div>
+ </div>
  <hr>
-<b>Sub Total</b>                       ${dblSubTotal}
-<b> Discount</b>
- ${dblDiscPer}${strDiscOnType}                     ${dblDiscAmt}
+ <div class="col-md-12">
+   <c:forEach items="${countryList}" var="item">
+    <div class="row">
+       <div class="col-6">${item.STRITEMNAME}</div>
+       <div class="col-2">${item.DBLQUANTITY}</div>
+       <div class="col-2">${item.DBLRATE}</div>
+       <div class="col-2">${item.DBLAMOUNT}</div>
+    </div>
+   </c:forEach>
+ </div>
+  <hr>
+ <div class="col-md-12">
+   <div class="row">
+       <div class="col-9"><b>Sub Total</b></div>
+       <div class="col-3">${dblSubTotal} </div>
+    </div>
+  </div>                                                     
+  
+   <div class="col-md-12">
+   <div class="row">
+       <div class="col-9"><b>Discount</b></div>
+       <div class="col-3">${dblDiscAmt}</div>
+    </div>
+  </div>  
+ 
+ <div class="col-md-12">
+    <div class="row">
+       <div class="col-10"><b>${dblDiscPer}${strDiscOnType}</b></div>
+    </div>
+ </div>  
+<hr> 
+ <pre class="western">                     
  Reason  : ${strReasonName}
  Remarks : ${strDiscRemarks}
- <c:forEach items="${taxList}" var="item">
-  ${item.strTaxDesc}                  ${item.dblTaxAmt}    </c:forEach>    
-<hr>
- Total(Rounded)                  ${dblGrandTotal} 
-<hr>
-     THANK YOU !!
-                    SANGUINE
+ </pre>
+ 
+  <div class="col-md-12">
+  <c:forEach items="${taxList}" var="item">
+   <div class="row">
+       <div class="col-9"> ${item.strTaxDesc}</div>
+       <div class="col-3"> ${item.dblTaxAmt}</div>
+    </div>
+  </c:forEach> 
+  </div> 
+  <br>
+<hr style="margin:0;">
 
+<div class="col-md-12" style="background-color:#f4f4f4;">
+   <div class="row">
+       <div class="col-9" style="color:#026302;"><b>Total(Rounded)</b></div>
+       <div class="col-3" style="color:#026302;"> ${dblGrandTotal}</div>
+    </div>
+ </div> 
+<hr style="margin:0;">                                                     
+<img class="card-img-top" src="../${pageContext.request.contextPath}/resources/images/qr-code.jpeg"  class="img-fluid" alt="Prems Logo"
+        style="height:120px;width:135px;margin-left:30%;">
+
+<pre class="western">   
+                               THANK YOU !!
+                                SANGUINE
 </pre>
-
-
-
- </div>
- </div>
-
-
-
-
-
+</div>
+</div>  
 </body>
 </html>

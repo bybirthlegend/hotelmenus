@@ -254,7 +254,7 @@ public class clsLoadModuleController {
                final String qty = rsSwipeStatus2.getString(3);
                final String rate = rsSwipeStatus2.getString(2);
                final String amount = rsSwipeStatus2.getString(4);
-               final int space = 21 - qty.length();
+               final int space = 35 - qty.length();
                final String spaces = String.format("%" + space + "s", "");
                map.put("STRITEMNAME", rsSwipeStatus2.getString(1));
                final int space2 = 8 - rate.length();
